@@ -6,7 +6,6 @@ import Accordion from './components/accordion/accordion';
 import Modal from './components/modal/modal';
 import Input from './components/input/input';
 import NumInput from './components/input/numInput';
-import axios from 'axios';
 import Platform from './components/platform/platform';
 import DateInput from './components/input/dataInput';
 import Select from './components/select/select';

@@ -8,7 +8,7 @@ const api = axios.create({
 
 export const createBookingApi = async (id, bookingData) => {
     try {
-        const response = await api.post(`/api/booking/${id}`, bookingData);
+        await api.post(`/api/booking/${id}`, bookingData);
     } catch (error) {
         console.error('Ошибка:' + error);
         throw error;
@@ -17,7 +17,7 @@ export const createBookingApi = async (id, bookingData) => {
 
 export const updateBookingApi = async (id, bookingData) => {
     try {
-        const response = await api.put(`/api/booking/${id}`, bookingData);
+        await api.put(`/api/booking/${id}`, bookingData);
     } catch (error) {
         console.error('Ошибка:' + error);
         throw error;
@@ -26,7 +26,7 @@ export const updateBookingApi = async (id, bookingData) => {
 
 export const deleteBookingApi = async (id) => {
     try {
-        const response = await api.delete(`/api/booking/${id}`);
+        await api.delete(`/api/booking/${id}`);
     } catch (error) {
         console.error('Ошибка:' + error);
         throw error;
